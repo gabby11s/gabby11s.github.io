@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        body {
+            background-color: rgb(0, 225, 255);
+        }
+
+        h1 {
+            text-align: center;
+        }
+
+        #content {
+            background-color: aqua;
+            margin: auto;
+            width: 75%;
+            padding: 10px;
+            border-radius: 10px;
+        }
+
+        #bigContainer {
+            background-color: rgb(128, 255, 255);
+            display: flex;
+            justify-content: space-evenly;
+            padding: 10px;
+            border-radius: 10px;
+        }
+
+        #smallContainer {
+            width: 40%;
+        }
+
+        .smallBox {
+            background-color: white;
+            margin: 10px;
+            padding: 4px;
+
+        }
+
+        .bigBox {
+            background-color: white;
+            margin: 10px;
+            width: 40%;
+            padding: 4px;
+        }
+
+        .allBoxes {
+            border: 1px solid black;
+            box-shadow: 5px 5px 1px black;
+        }
+    </style>
+</head>
+
+<body>
+    <div id="content">
+        <h1>Header</h1>
+        <div id="bigContainer">
+            <div id="smallContainer">
+                <div class="smallBox allBoxes">
+                    <h2>About</h2>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Maecenas tempus turpis ac felis pharetra
+                        iaculis. Phasellus sollicitudin porta arcu vitae semper. Vestibulum ac augue arcu. Duis nulla
+                        lectus, tincidunt nec metus vel, malesuada pretium enim.</p>
+                </div>
+                <div class="smallBox allBoxes">
+                    <h2>Game</h2>
+                    <p>Click <a href="game/gettoschool5/index.html">here</a> to play</p>
+                </div>
+                <div class="smallBox allBoxes">
+                    <h2>Images</h2>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Asperiores accusantium inventore aliquid
+                        ab officiis enim voluptates explicabo. Vitae consequatur tempore nemo. Hic repudiandae quisquam
+                        facilis natus, harum error ullam tempore!</p>
+                </div>
+            </div>
+            <div class="bigBox allBoxes">
+                <h2>Big Box</h2>
+                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Voluptatibus voluptatum commodi in minus
+                    delectus id? Architecto quam culpa repellendus quidem eaque, illo repellat doloribus quas est,
+                    cupiditate, dignissimos velit fugiat.</p>
+                <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Possimus odio iure voluptates accusantium
+                    maiores consectetur et! Exercitationem, maxime? Corrupti deserunt, dignissimos qui corporis numquam
+                    culpa incidunt doloribus aliquam amet vel.</p>
+                <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Vitae aut consequuntur, facilis beatae
+                    labore voluptate quibusdam perspiciatis, minus, iure modi odit ipsum! Maxime assumenda sint
+                    obcaecati voluptates aspernatur cumque sit.</p>
+            </div>
+        </div>
+    </div>
+</body>
+
+</html>
