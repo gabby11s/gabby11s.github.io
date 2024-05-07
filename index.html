@@ -4,93 +4,127 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Ashen Waters</title>
     <style>
         body {
-            background-color: rgb(0, 225, 255);
+            background: linear-gradient(rgb(252, 222, 167), rgb(139, 255, 255));
+            background-attachment: fixed;
+            background-repeat: no-repeat;
+            width: 100vw;
+            height: 100vh;
         }
 
-        h1 {
-            text-align: center;
+        #homecontent {
+            margin-top: 3%;
+            font-family: Georgia, 'Times New Roman', Times, serif;
         }
 
-        #content {
-            background-color: aqua;
+        #nav {
+            max-width: 20%;
+            background-color: rgb(253, 206, 209);
             margin: auto;
-            width: 75%;
-            padding: 10px;
-            border-radius: 10px;
-        }
-
-        #bigContainer {
-            background-color: rgb(128, 255, 255);
-            display: flex;
             justify-content: space-evenly;
-            padding: 10px;
-            border-radius: 10px;
-        }
-
-        #smallContainer {
-            width: 40%;
-        }
-
-        .smallBox {
-            background-color: white;
-            margin: 10px;
-            padding: 4px;
+            text-align: center;
+            font-size: small;
+            position: fixed;
+            top: 0;
+            left: 25%;
+            right: 25%;
 
         }
 
-        .bigBox {
-            background-color: white;
-            margin: 10px;
-            width: 40%;
-            padding: 4px;
+        h2 {
+            display: inline-flex;
+            padding-inline: 5%;
+            margin-top: 0%;
+            padding-top: 2.5%;
+
         }
 
-        .allBoxes {
-            border: 1px solid black;
-            box-shadow: 5px 5px 1px black;
+        .header {
+            border: solid 2px lightsalmon;
+            text-align: center;
+            margin: 3% 10% 3% 10%;
+        }
+
+        #gamedescription {
+            margin: 2.5%;
+            background-color: rgb(252, 233, 210);
+            border: 2px solid rgb(252, 233, 210);
+        }
+
+        #gamerelease {
+            margin: 2.5%;
+            background-color: rgb(252, 233, 210);
+            border: 2px solid rgb(252, 233, 210);
+        }
+
+        h4 {
+            font-size: 22px;
+        }
+
+        p {
+            margin-left: 5%;
+        }
+
+        a {
+            color: rebeccapurple;
+            text-decoration: none;
+        }
+        #images {
+            height: fit-content;
+            width: fit-content;
+            padding-right: 1%;
+            padding-left: 1%;
+            padding-top: 1%;
+            padding-bottom: 1%;
+            background-color: steelblue;
+            margin-left: 30%
+        }
+
+        #gamerelease a {
+            color: blue;
+            text-decoration: underline;
         }
     </style>
 </head>
 
 <body>
-    <div id="content">
-        <h1>Header</h1>
-        <div id="bigContainer">
-            <div id="smallContainer">
-                <div class="smallBox allBoxes">
-                    <h2>About</h2>
-                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Maecenas tempus turpis ac felis pharetra
-                        iaculis. Phasellus sollicitudin porta arcu vitae semper. Vestibulum ac augue arcu. Duis nulla
-                        lectus, tincidunt nec metus vel, malesuada pretium enim.</p>
-                </div>
-                <div class="smallBox allBoxes">
-                    <h2>Game</h2>
-                    <p>Click <a href="game/gettoschool5/index.html">here</a> to play</p>
-                </div>
-                <div class="smallBox allBoxes">
-                    <h2>Images</h2>
-                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Asperiores accusantium inventore aliquid
-                        ab officiis enim voluptates explicabo. Vitae consequatur tempore nemo. Hic repudiandae quisquam
-                        facilis natus, harum error ullam tempore!</p>
-                </div>
+    <div id="homecontent">
+        <div id="nav">
+            <h2 class="navbutton"><a href="index.html">Home</a></h2>
+            <h2 class="navbutton"><a href="about.html">About</a></h2>
+            <h2 class="navbutton"><a href="gamelink.html">Game</a></h2>
+        </div>
+        <div class="header">
+            <h1>Welcome to <em>Ashen Waters</em>!</h1>
+            <h3>The ultimate aquatic adventure awaits!</h3>
+        </div>
+        <div id="content">
+            <div id="gamedescription">
+                <h4>~What is Ashen Waters?</h4>
+                <p> Ashen Waters is an up-and-coming adventure game created in RPG Maker MZ.
+                    It stars actor Mira, as she travels the world discovering the secrets
+                    of the waters she thought were hers to trust. When the ashes fall, calamity
+                    awaits those in the waters, and the desctruction of cities nearby.
+                    Will you figure out where the ashes come from, and what to make of them?
+                </p>
             </div>
-            <div class="bigBox allBoxes">
-                <h2>Big Box</h2>
-                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Voluptatibus voluptatum commodi in minus
-                    delectus id? Architecto quam culpa repellendus quidem eaque, illo repellat doloribus quas est,
-                    cupiditate, dignissimos velit fugiat.</p>
-                <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Possimus odio iure voluptates accusantium
-                    maiores consectetur et! Exercitationem, maxime? Corrupti deserunt, dignissimos qui corporis numquam
-                    culpa incidunt doloribus aliquam amet vel.</p>
-                <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Vitae aut consequuntur, facilis beatae
-                    labore voluptate quibusdam perspiciatis, minus, iure modi odit ipsum! Maxime assumenda sint
-                    obcaecati voluptates aspernatur cumque sit.</p>
+            <div id="gamerelease">
+                <h4>~Is the game available now?</h4>
+                <p>Yes, the game can be played right now! You can access it using this <a href="game/index.html">link</a> or at
+                    the Game tab at the top of the website. However, the game is not fully
+                    completed yet, and there will be bugs or things that are not yet
+                    implemented into the game yet. More updates of content will gradually roll out.
+                </p>
+            </div>
+            <div id="images">
+                <img src="finalimages/ashenWatersOceanScreenshot.PNG">
             </div>
         </div>
+
     </div>
+
 </body>
 
 </html>
