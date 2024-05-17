@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ashen Waters</title>
+    <style>
+        body {
+            background: linear-gradient(rgb(252, 222, 167), rgb(139, 255, 255));
+            background-attachment: fixed;
+            background-repeat: no-repeat;
+            width: 100vw;
+            height: 100vh;
+        }
+
+        #homecontent {
+            font-family: Georgia, 'Times New Roman', Times, serif;
+        }
+
+        #nav {
+            width: 100vw;
+            min-width: 20%;
+            background-color: rgb(253, 206, 209);
+            margin: auto;
+            justify-content: space-evenly;
+            text-align: center;
+            font-size: small;
+            position: relative;
+        }
+
+        h2 {
+            display: inline-flex;
+            padding-inline: 5%;
+            padding-top: 0%;
+        }
+
+        .header {
+            border: solid 2px lightsalmon;
+            text-align: center;
+            margin: 3% 10% 3% 10%;
+        }
+
+        #gamedescription {
+            margin: 2.5%;
+            background-color: rgb(252, 233, 210);
+            border: 2px solid rgb(252, 233, 210);
+        }
+
+        #gamerelease {
+            margin: 2.5%;
+            background-color: rgb(252, 233, 210);
+            border: 2px solid rgb(252, 233, 210);
+        }
+
+        h4 {
+            font-size: 22px;
+        }
+
+        p {
+            margin-left: 5%;
+        }
+
+        a {
+            color: rebeccapurple;
+            text-decoration: none;
+        }
+        #images {
+            height: fit-content;
+            width: fit-content;
+            padding-right: 1%;
+            padding-left: 1%;
+            padding-top: 1%;
+            padding-bottom: 1%;
+            background-color: steelblue;
+            margin: auto;
+        }
+
+        #gamerelease a {
+            color: blue;
+            text-decoration: underline;
+        }
+
+        .responsive {
+            max-width: 100%;
+            height: auto;
+        }
+    </style>
+</head>
+
+<body>
+    <div id="homecontent">
+        <div id="nav">
+            <h2 class="navbutton"><a href="index.html">Home</a></h2>
+            <h2 class="navbutton"><a href="about.html">About</a></h2>
+            <h2 class="navbutton"><a href="gamelink.html">Game</a></h2>
+        </div>
+        <div class="header">
+            <h1>Welcome to <em>Ashen Waters</em>!</h1>
+            <h3>The ultimate aquatic adventure awaits!</h3>
+        </div>
+        <div id="content">
+            <div id="gamedescription">
+                <h4>~What is Ashen Waters?</h4>
+                <p> Ashen Waters is an up-and-coming adventure game created in RPG Maker MZ.
+                    It stars actor Mira, as she travels the world discovering the secrets
+                    of the waters she thought were hers to trust. When the ashes fall, calamity
+                    awaits those in the waters, and the desctruction of cities nearby.
+                    Will you figure out where the ashes come from, and what to make of them?
+                </p>
+            </div>
+            <div id="gamerelease">
+                <h4>~Is the game available now?</h4>
+                <p>Yes, the game can be played right now! You can access it using this <a href="game/index.html">link</a> or at
+                    the Game tab at the top of the website. However, the game is not fully
+                    completed yet, and there will be bugs or things that are not yet
+                    implemented into the game yet. More updates of content will gradually roll out.
+                </p>
+            </div>
+            <div id="images">
+                <img src="finalimages/ashenWatersOceanScreenshot.PNG" class="responsive">
+            </div>
+        </div>
+
+    </div>
+
+</body>
+
+</html>
