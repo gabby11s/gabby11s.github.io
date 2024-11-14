@@ -4,6 +4,8 @@ body {
     background-attachment: fixed;
     width: 100vw;
     height: 100vh;
+    padding: 0;
+    margin: 0;
 }
 
 #topOfPage {
@@ -18,12 +20,14 @@ body {
     color: white;
     font-family: Verdana, Geneva, Tahoma, sans-serif;
 }
+
 img {
     border-radius: 50%;
     height: 125px;
     left: 5%;
     width: 125px
 }
+
 #rightImage {
     float: right;
 }
@@ -109,6 +113,7 @@ ul {
     font-family: Tahoma;
     text-align: center;
 }
+
 #rylan {
     border: 3px solid black;
     width: 40%;
@@ -120,14 +125,17 @@ ul {
     font-family: Tahoma;
     text-align: center;
 }
+
 #showOff {
     display: flex;
     justify-content: space-evenly;
 }
+
 #programs {
     font-size: 30px;
     color: rgb(3, 92, 37);
 }
+
 #itPrograms {
     border: 3px solid black;
     width: 34%;
@@ -141,4 +149,47 @@ ul {
     margin-left: auto;
     margin-right: auto;
     padding-bottom: 20px;
+}
+
+@media screen and (max-width: 600px) {
+    body {
+        background-color: lightblue;
+    }
+
+    #content {
+        display: block;
+    }
+
+    #freshman {
+        margin: auto;
+        width: 80%;
+    }
+    
+    #clubs {
+        margin: auto;
+        width: 80%;
+        padding-left: 10px;
+        padding-right: 10px;
+    }
+
+    #topOfPage {
+        display: block;
+    }
+
+    #leftImage {
+        display: block; /* Ensure it's a block-level element */
+        margin-left: auto;
+        margin-right: auto;
+        margin-top: 10px;
+    }
+
+    #rightImage {
+        display: none;
+    }
+
+    #itPrograms {
+        width: 80%;
+        padding-left: 10px;
+        padding-right: 10px;
+    }
 }
