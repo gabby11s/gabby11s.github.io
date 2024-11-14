@@ -4,126 +4,86 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Ashen Waters</title>
-    <style>
-        body {
-            background: linear-gradient(rgb(252, 222, 167), rgb(139, 255, 255));
-            background-attachment: fixed;
-            background-repeat: no-repeat;
-            width: 100vw;
-            height: 100vh;
-        }
-
-        #homecontent {
-            font-family: Georgia, 'Times New Roman', Times, serif;
-        }
-
-        #nav {
-            width: 100vw;
-            min-width: 20%;
-            background-color: rgb(253, 206, 209);
-            margin: auto;
-            justify-content: space-evenly;
-            text-align: center;
-            font-size: small;
-            position: relative;
-        }
-
-        h2 {
-            display: inline-flex;
-            padding-inline: 5%;
-            padding-top: 0%;
-        }
-
-        .header {
-            border: solid 2px lightsalmon;
-            text-align: center;
-            margin: 3% 10% 3% 10%;
-        }
-
-        #gamedescription {
-            margin: 2.5%;
-            background-color: rgb(252, 233, 210);
-            border: 2px solid rgb(252, 233, 210);
-        }
-
-        #gamerelease {
-            margin: 2.5%;
-            background-color: rgb(252, 233, 210);
-            border: 2px solid rgb(252, 233, 210);
-        }
-
-        h4 {
-            font-size: 22px;
-        }
-
-        p {
-            margin-left: 5%;
-        }
-
-        a {
-            color: rebeccapurple;
-            text-decoration: none;
-        }
-        #images {
-            height: fit-content;
-            width: fit-content;
-            padding-right: 1%;
-            padding-left: 1%;
-            padding-top: 1%;
-            padding-bottom: 1%;
-            background-color: steelblue;
-            margin: auto;
-        }
-
-        #gamerelease a {
-            color: blue;
-            text-decoration: underline;
-        }
-
-        .responsive {
-            max-width: 100%;
-            height: auto;
-        }
-    </style>
+    <title>Welcome to York Tech!</title>
+    <link rel="stylesheet" href="openhouse.css">
 </head>
 
 <body>
-    <div id="homecontent">
-        <div id="nav">
-            <h2 class="navbutton"><a href="index.html">Home</a></h2>
-            <h2 class="navbutton"><a href="about.html">About</a></h2>
-            <h2 class="navbutton"><a href="gamelink.html">Game</a></h2>
+    <div id="topOfPage">
+        <div>
+            <img src="finalimages/yorkTechIcon.png">
         </div>
-        <div class="header">
-            <h1>Welcome to <em>Ashen Waters</em>!</h1>
-            <h3>The ultimate aquatic adventure awaits!</h3>
+        <h1 class="yorkTechTitle"><b>Welcome to York Tech Information Technology (IT)</b></h1>
+        <div>
+            <img src="finalimages/yorkTechIcon.png" id="rightImage">
         </div>
-        <div id="content">
-            <div id="gamedescription">
-                <h4>~What is Ashen Waters?</h4>
-                <p> Ashen Waters is an up-and-coming adventure game created in RPG Maker MZ.
-                    It stars actor Mira, as she travels the world discovering the secrets
-                    of the waters she thought were hers to trust. When the ashes fall, calamity
-                    awaits those in the waters, and the desctruction of cities nearby.
-                    Will you figure out where the ashes come from, and what to make of them?
-                </p>
-            </div>
-            <div id="gamerelease">
-                <h4>~Is the game available now?</h4>
-                <p>Yes, the game can be played right now! You can access it using this <a href="game/index.html">link</a> or at
-                    the Game tab at the top of the website. However, the game is not fully
-                    completed yet, and there will be bugs or things that are not yet
-                    implemented into the game yet. More updates of content will gradually roll out.
-                </p>
-            </div>
-            <div id="images">
-                <img src="finalimages/ashenWatersOceanScreenshot.PNG" class="responsive">
-            </div>
-        </div>
+    </div>
+    <!-- <h1 class="yorkTechTitle"><b>Welcome to York Tech Information Technology (IT)</b></h1> -->
+    <h1 id="fuel">Fuel Your Future</h1>
+    <h2>We are excited that you are interested in attending our school!</h2>
 
+
+    <div id="content">
+        <div id="freshman">
+            <h3>What will you do in freshman year?</h3>
+            <p id="makeSpace">You will be put into a rotation system, rotating between 4 IT classes every quarter of the
+                year.
+                The classes you will take freshman year revolve around software, hardware, networking, cybersecurity,
+                and
+                computer programming
+                to get a well-rounded foundation of IT.</p>
+
+            <p id="bigFontP">For most of freshman year, you will prepare to take the CompTIA IT Fundamentals (ITF+)
+                certification.
+                York Tech
+                offers lots of certifications
+                for students, which help you stand out in the workforce since you can be certified and experienced
+                earlier than other candidates!
+            </p>
+        </div>
+        <div id="clubs">
+            <h3 id="clubTitle">Some After-School Clubs & Activities for IT students</h3>
+            <ul>
+                <li><b>CyberPatriot</b> - National Air & Space Association Cyber Education Program (Cybersecurity).
+                    Student-led
+                    club that teaches cybersecurity and network security</li>
+                <li><b>Esports</b> - Members play multiplayer video games against other high school teams. Games
+                    included are
+                    Overwatch, League of Legends, Super Smash Brothers, Splatoon 3. Mario Kart 8, and Rocket League</li>
+                <li><b>Game Development Club</b> - Members design and test games of all types, but mostly video games
+                </li>
+                <li><b>SkillsUSA</b> - National organization that develops leadership and occupational skills. Can
+                    participate
+                    in IT releated competitions</li>
+                <li><b>TSA</b> - The Technology Student Association (TSA) is national organization for students
+                    interested in
+                    competing in STEM (Science, Technology, Engineering, and Mathematics) competitions</li>
+            </ul>
+        </div>
     </div>
 
+    <div id="itPrograms">
+        <h2 id="programs">Our IT Programs Are:</h2>
+        <p class="noBulletPoints">Computer Programming & Interactive Media</p>
+        <p class="noBulletPoints">Electronics & IT Support</p>
+        <p class="noBulletPoints">Network Systems & Cyber Security</p>
+    </div>
+
+    <h2>And here are some of our projects we completed in Computer Programming!</h2>
+    <div id="showOff">
+        <div id="gabby">
+            <p>Websites made by Gabby Stevens:</p>
+            <a href="https://gabby11s.github.io/">Ashen Waters HTML Project and RPG Maker MZ Game</a>
+            <p>Also the website you're looking at!</p>
+        </div>
+
+        <div id="rylan">
+            <p>Websites made by Rylan Stump:</p>
+            <a href="https://rstump1928.github.io/">DogGPT</a>
+            <br>
+            <a href="https://rylans2027.github.io/">Rylan's Freshman Project</a>
+        </div>
+    </div>
 </body>
 
 </html>

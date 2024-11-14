@@ -1,0 +1,144 @@
+body {
+    background: linear-gradient(rgb(3, 92, 37), rgb(10, 179, 74));
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    width: 100vw;
+    height: 100vh;
+}
+
+#topOfPage {
+    display: flex;
+    justify-content: space-evenly;
+    padding-bottom: 0;
+}
+
+.yorkTechTitle {
+    font-size: 48px;
+    text-align: center;
+    color: white;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+img {
+    border-radius: 50%;
+    height: 125px;
+    left: 5%;
+    width: 125px
+}
+#rightImage {
+    float: right;
+}
+
+#fuel {
+    font-size: 40px;
+    text-align: center;
+    color: white;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    margin-top: 0;
+
+}
+
+h2 {
+    text-align: center;
+    color: white;
+    font-family: Geneva, Tahoma, sans-serif;
+}
+
+h3 {
+    color: rgb(5, 116, 47);
+    font-family: Tahoma;
+    text-decoration: underline;
+    font-size: 20px;
+}
+
+p {
+    line-height: 20px;
+}
+
+ul {
+    line-height: 20px;
+    padding-right: 10px;
+    font-size: 18px;
+}
+
+#freshman {
+    border: 3px solid black;
+    width: 40%;
+    margin: 1.5%;
+    padding-left: 10px;
+    padding-right: 10px;
+    background-color: rgb(235, 235, 235);
+    border-radius: 25px;
+}
+
+#clubs {
+    border: 3px solid black;
+    width: 40%;
+    margin: 1.5%;
+    background-color: rgb(235, 235, 235);
+    border-radius: 25px;
+}
+
+#clubTitle {
+    padding-left: 10px;
+}
+
+#content {
+    display: flex;
+    justify-content: space-evenly;
+}
+
+#makeSpace {
+    margin-bottom: 45px;
+    font-size: 20px;
+    font-family: Geneva;
+}
+
+#bigFontP {
+    font-size: 20px;
+    font-family: Geneva;
+}
+
+#gabby {
+    border: 2px solid black;
+    width: 40%;
+    margin: 1.5%;
+    background-color: rgb(235, 235, 235);
+    border-radius: 25px;
+    font-size: 20px;
+    font-weight: bold;
+    font-family: Tahoma;
+    text-align: center;
+}
+#rylan {
+    border: 3px solid black;
+    width: 40%;
+    margin: 1.5%;
+    background-color: rgb(235, 235, 235);
+    border-radius: 25px;
+    font-size: 20px;
+    font-weight: bold;
+    font-family: Tahoma;
+    text-align: center;
+}
+#showOff {
+    display: flex;
+    justify-content: space-evenly;
+}
+#programs {
+    font-size: 30px;
+    color: rgb(3, 92, 37);
+}
+#itPrograms {
+    border: 3px solid black;
+    width: 34%;
+    margin: 1%;
+    background-color: rgb(235, 235, 235);
+    border-radius: 25px;
+    font-size: 20px;
+    font-weight: bold;
+    font-family: Tahoma;
+    text-align: center;
+    margin-left: auto;
+    margin-right: auto;
+    padding-bottom: 20px;
+}
