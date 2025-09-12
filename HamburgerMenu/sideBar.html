@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>RNG Funsies</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <nav class="videoNav">
+        <div class="arrowToggle">
+            <img
+                src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABgAAAAYCAYAAADgdz34AAAAAXNSR0IArs4c6QAAAMlJREFUSEvt08EJwkAQheH/9SB492IPCtqOeBXsRHIXLEQQaxC0AFGwhdHAHpZA3JlgwENy3sy382ZW9Pyp5/oMQDHh/4nIzLbAXtK9eO3sgKsDM1sDO+AKLCKIFxgD508HE+AGzCQ9PZ24gLqQmeXIJXVSRNxAhhyBKeBCQkBCRsApQ+aSXm1x/QKoh94aVQgws+btvxavu3IDacih/N1A1w2KACugSpuzlPTwvAE3kLZnAxwirzgEeG/cPOce8gB0TaD4X+8zeAO4ckYZlcLz7AAAAABJRU5ErkJggg==" />
+        </div>
+
+        <div class="itemContent">
+            <div class="listItems">
+                <li class="linkContent">
+                    <a href="sideBar.html">
+                        <img
+                            src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABgAAAAYCAYAAADgdz34AAAAAXNSR0IArs4c6QAAASFJREFUSEvt1b8uBUEUx/HPjUQ0KoUHkIigUUmEhIKotBqegAfwBqLnCeg0CqU/BZGoNEIUHkChEh3hbrKbjHHX7O51GzHlmXN+33NOfpNp6fFp9VhfHcAwLvKG5vBUpbmqgEFcYTIXvcUMXlKQKoB+nGI2ErvEAt5+gqQA2f0RVkpEDrGKjzJICrCLjcQa9rDZBLCF7dSO8/ssd6dTbtkEa9ivKF6kreMgrukEWMYx+moC3ttOW8JZWBcDpnI7DtQUL9Jf247L3shNEQgBI7jGUEPxouwZ03jMAiHgAaNdihfld5iIAfcY+yVApjUeA0Lt0oeTaOCbacps+jcB8bSdpuxqRf+ALwY8x3wQOcFiZNEqObX+5EZvMPXhNBINiz4Bp0ktGQo11VEAAAAASUVORK5CYII=" />
+                        <span class="emptySpan"></span>
+                        <span class="linkText">Home</span>
+                    </a>
+                </li>
+                <li class="linkContent">
+                    <a href="dice.html">
+                        <img
+                            src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABgAAAAYCAYAAADgdz34AAAAAXNSR0IArs4c6QAAAPRJREFUSEu91TFKBDEYxfHfopVXEASx0JtYidqt6DFsvIEeRGsVFLyGjd2i4BW0VQJZlexmSGJmUw3DfO8/Ly/fl4mR12RkfSsHHOISe43OXnCOx3l96uAdm43i87IZdnKAr3+KL+imDlLAA9axXwn+0R0C3OI4CofnkE/pKgLc4DQq3uOgVJ3f0znk4BPX2Bpri5b9cGkmRVuUAmoyaQLUZNIEqMmkCbAsk6f4Mu2TLoA7HGX6pAsgHOGzCAj5nPyx2AXwgSC8hik2egOGGjvr4C12bsVUWPj0Fdu5cR0G2hV2GwnPuBi6cBp182Urv5O7O/gGtMwtGbkfKEoAAAAASUVORK5CYII=" />
+                        <span class="linkText">Roll the Dice</span>
+                    </a>
+                </li>
+                <li class="linkContent">
+                    <a href="">
+                        <img
+                            src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABgAAAAYCAYAAADgdz34AAAAAXNSR0IArs4c6QAAAg5JREFUSEu11cvLTlEUx/HPi2Lgb/AHuKZccyfJJcoMAxOZCLmTS2JA7gMpE0kpExO3kEvkkhCFRPkrKCSXs2qft/Ps95znSJ41Oc+z92/t7157r7V2nx5bX4/X1wYYjGWYi+nYmDZ0Ek9wF1fws2mj3QBjcBHxLW1O+nG/MvYGqxDfAdYEmIBnGJR51AFC8guz8Cgn1AFi8RdF2HsLwIG/BJzAFpS+/W45YDxeYgNOYyuOthzRMWxL2kMYjQ+lTxUwpLjQV0kQ89vT4jswqRjYj7fJcWSK8GNxPPuyaOPyp9UBFhchXsuOJHYWO+xmEWFEWrXY0PMYqEZwHJsz4VUsbQHcKBJiYaYpo+8AvMa4TDi/yP87LYBFuJ5pAhon0gGYWZOWT/G9BTAMUzLN15Tm/wUwFFMzQNTFwzyCyJBRmXABbrdEEJqbmSaqemwOOIu1/3DJcUfzMr8zWJcDVuN8JtyFwy0R7MHBTLMCl3LAcLzDiCTehFMpdVfiSNH4Lqe+sxwx/wC7sRNRxWGfUrF+ywHxP9LyFtYUoHMNreJz6lXlpqutIjYxuSyyOkCMTUyCutCjm36pLpAoUaRRzbF4dOF+a2rXUeqPEf2pak2A38XjMyP5dDh0e3AiZePBqVZ3HeA94o6iEwywticzIliSnszZWJ+O6ALuFY9MvGzRr340ZVoboCVD26d7DvgD08tpGd1wJBoAAAAASUVORK5CYII=" />
+                        <span class="linkText">Spin the Wheel</span>
+                    </a>
+                </li>
+                <li class="linkContent">
+                    <a href="">
+                        <img
+                            src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABgAAAAYCAYAAADgdz34AAAAAXNSR0IArs4c6QAAAL5JREFUSEvtlbENwkAMRV+mSIeEUoRtWIaGDWChDEJDh6BjCxBRLF1O5s4urChSUl7s/7//OT8NwU8TjI+F4DOJyGv/nc80L0JwBC7AwWnfHTgBQ9qnTfAGWie4lD+ArkZg8lYRoPZpE4QRCLCIsyxAOojan4KUCPJ3mogqgTRpFnkIZpNb72AjGO0Pv+TwNS1tkSU5lv+SReUL2FkkKzVPYF8Lu19cX4HeSXIDzpa4znHX90dzOlMu90aym/wL1R4wGclmW1oAAAAASUVORK5CYII=" />
+                        <span class="linkText">AI</span>
+                    </a>
+                </li>
+                <li class="linkContent">
+                    <a href="">
+                        <img
+                            src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABgAAAAYCAYAAADgdz34AAAAAXNSR0IArs4c6QAAAU1JREFUSEvFlL9KA0EQh78UoiDB3kqwttH4j7xDsFRIYZlHsLFJl8cQxc5ChDxBhBgUGytb+0CihRFRb3QThmUut5vL4ZQ7d79vZn6zW6LgKBWsTwjgCVgFLoFz4C6mqBDAtyf47EBnwEsWLAZwBdSABSXaAS5cd68WLAYg364Ah0AdqMJkxCPgxnXWBj7HsFiALnLNgY4T4XWVEM825gHQsF1AQA13OCk8TwfWyMcL8b+ACrAHvCezlM3p+21PWc3MDprAqRIYuM2Ro5nGqX+S1ZObmha5AQ/AZpGAIVBOAchFWjJymX7ptuUR20kBdIF9LxfklwYcuTfFYhwA1yoR7JdvnF+VaJ4ALY96n7w9WyF+WZux7cbxBdwCj4bQG7CcAvgAFmPeIkunB0ghVoiXclF/I2S3LZFgv2YFCDTIrzwAgWT6lRcwZZH+Uj/VrkMZbux0EgAAAABJRU5ErkJggg==" />
+                        <span class="linkText">Sound Testing</span>
+                    </a>
+                </li>
+
+            </div>
+            <h3 class="closingTextColor">RNG Fun Menu</h3>
+            <h3 class="closingText">Thanks for stopping by!</h3>
+        </div>
+    </nav>
+
+
+
+    <div class="bodyContent">
+        <h2>I practiced using the hamburger menu!</h2>
+        <h3>I'm going to need a navigation tab and some style.</h3>
+        <br>
+        <h2>This is the home page! Welcome!</h2>
+        <h3>This website's purpose is to have lots of RNG type "mini-games".</h3>
+        <h3>Use the navigation tab on the left or click the icons to explore different places! Have fun!</h3>
+        <h2><a href="/gabby11s.github.io/index.html">Back to Portfolio</a></h2>
+    </div>
+</body>
+
+<script src="burger.js"></script>
+
+</html>

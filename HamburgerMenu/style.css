@@ -1,0 +1,167 @@
+@import url('https://fonts.googleapis.com/css2?family=Cherry+Cream+Soda&display=swap');
+
+* {
+    font-family: "Cherry Cream Soda", system-ui;
+}
+
+:root {
+    --white: #FFF;
+    --teal-green: rgb(111, 223, 200);
+    --darker-teal: rgb(57, 212, 192);
+    --beige: rgb(247, 244, 212);
+    --salmon-pink: rgb(254, 159, 171);
+    --bright-yellow: rgb(254, 228, 113);
+    --sky-blue: rgb(1, 175, 218);
+    --tran-02: all 0.2s ease;
+    --tran-03: all 0.3s ease;
+    --tran-04: all 0.4s ease;
+    --tran-05: all 0.5s ease;
+}
+
+body {
+    background-color: var(--beige);
+    height: 100vh;
+    left: 125px;
+}
+
+.videoNav {
+    position: fixed;
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: 35px;
+    background-color: var(--teal-green);
+    padding: 10px 30px;
+    z-index: 5;
+    transition: var(--tran-04);
+}
+
+.videoNav.open {
+    width: 250px;
+    transition: var(--tran-04);
+}
+
+.videoNav.open .linkText {
+    opacity: 1.0;
+    font-size: 23px;
+    transition: var(--tran-04);
+}
+
+.linkText {
+    opacity: 0;
+    font-size: 0px;
+    transition: var(--tran-04);
+}
+
+.videoNav.open .navText {
+    opacity: 1.0;
+    font-size: 30px;
+    display: flex;
+    align-items: center;
+    font-weight: 500;
+    flex-direction: column;
+}
+
+.videoNav.open .closingText {
+    opacity: 1.0;
+    font-size: 17px;
+    transition: var(--tran-04);
+}
+
+.videoNav.open .closingTextColor {
+    opacity: 1;
+    font-size: 25px;
+    transition: var(--tran-04);
+}
+
+.navText {
+    /* display: flex;
+    align-items: center; */
+    font-size: 0px;
+    opacity: 0;
+    /* font-weight: 500;
+    flex-direction: column; */
+}
+
+.navText .About {
+    margin-top: 5px;
+}
+
+.arrowToggle {
+    position: absolute;
+    top: 5%;
+    right: -25px;
+    transform: translateY(-50%);
+    width: 30px;
+    height: 30px;
+    background-color: var(--salmon-pink);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 15%;
+    font-size: 22px;
+    font-weight: 500;
+}
+
+.listItems li {
+    height: 50px;
+    margin-top: 20px;
+    list-style: none;
+    display: flex;
+    align-items: center;
+}
+
+.listItems li a {
+    height: 100%;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    text-decoration: none;
+    color: black;
+    height: 50px;
+}
+
+.linkContent {
+    display: flex;
+    align-items: center;
+    font-family: 'Lucida Sans';
+    font-weight: 600;
+    font-size: 23px;
+}
+
+.linkContent:hover {
+    background-color: rgb(250, 210, 216);
+
+}
+
+img {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    min-width: 30px;
+}
+
+.videoNav .itemContent {
+    height: calc(100% - 150px);
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    text-align: center;
+}
+
+.itemContent h3 {
+    background-color: var(--teal-green);
+    opacity: 0;
+}
+
+.videoNav.open .itemContent h3 {
+    background-color: rgb(192, 192, 192);
+    border: solid 4px white;
+    padding: 7px;
+}
+
+.bodyContent {
+    position: relative;
+    left: 125px;
+    /* right: 125px; */
+}

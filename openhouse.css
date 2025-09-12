@@ -114,7 +114,7 @@ ul {
     text-align: center;
 }
 
-#rylan {
+/* #rylan {
     border: 3px solid black;
     width: 40%;
     margin: 1.5%;
@@ -124,7 +124,7 @@ ul {
     font-weight: bold;
     font-family: Tahoma;
     text-align: center;
-}
+} */
 
 #showOff {
     display: flex;
@@ -151,6 +151,9 @@ ul {
     padding-bottom: 20px;
 }
 
+#backToPortfolio {
+    padding-bottom: 20px;
+}
 @media screen and (max-width: 600px) {
     body {
         background-color: lightblue;
